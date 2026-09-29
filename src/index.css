@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    border-color: #272727;
+  }
+  
+  html {
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #131209;
+    color: #F3F4F6;
+  }
+
+  body {
+    background-color: #131209;
+    color: #F3F4F6;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  p, li, span {
+    text-wrap: pretty;
+  }
+}
+
+/* Custom fluid motion easing per SKILL.md B7 */
+.fluid-ease {
+  transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
